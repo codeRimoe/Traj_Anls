@@ -1,0 +1,438 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Display</class>
+ <widget class="QDialog" name="Display">
+  <property name="windowModality">
+   <enum>Qt::NonModal</enum>
+  </property>
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1000</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="cursor">
+   <cursorShape>CrossCursor</cursorShape>
+  </property>
+  <property name="windowTitle">
+   <string>Display</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="resources.qrc">
+    <normaloff>:/img/Show.png</normaloff>:/img/Show.png</iconset>
+  </property>
+  <layout class="QGridLayout" name="gridLayout">
+   <item row="4" column="3">
+    <widget class="QWidget" name="widget4_label" native="true">
+     <property name="minimumSize">
+      <size>
+       <width>250</width>
+       <height>20</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>250</width>
+       <height>20</height>
+      </size>
+     </property>
+     <property name="font">
+      <font>
+       <family>微软雅黑 Light</family>
+      </font>
+     </property>
+     <widget class="QLabel" name="label">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>250</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>微软雅黑 Light</family>
+       </font>
+      </property>
+      <property name="text">
+       <string>SYSU GIS | By Rimoe</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+      </property>
+     </widget>
+    </widget>
+   </item>
+   <item row="3" column="3">
+    <widget class="QListWidget" name="ls_detail">
+     <property name="minimumSize">
+      <size>
+       <width>250</width>
+       <height>0</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>250</width>
+       <height>16777215</height>
+      </size>
+     </property>
+     <property name="font">
+      <font>
+       <family>微软雅黑 Light</family>
+      </font>
+     </property>
+     <property name="cursor" stdset="0">
+      <cursorShape>CrossCursor</cursorShape>
+     </property>
+     <property name="selectionBehavior">
+      <enum>QAbstractItemView::SelectItems</enum>
+     </property>
+    </widget>
+   </item>
+   <item row="0" column="3">
+    <widget class="QWidget" name="widget1_btn" native="true">
+     <property name="minimumSize">
+      <size>
+       <width>250</width>
+       <height>40</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>250</width>
+       <height>40</height>
+      </size>
+     </property>
+     <property name="font">
+      <font>
+       <family>微软雅黑 Light</family>
+      </font>
+     </property>
+     <widget class="QPushButton" name="Btn_SeeAll">
+      <property name="geometry">
+       <rect>
+        <x>50</x>
+        <y>10</y>
+        <width>60</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>微软雅黑 Light</family>
+        <pointsize>9</pointsize>
+       </font>
+      </property>
+      <property name="cursor">
+       <cursorShape>PointingHandCursor</cursorShape>
+      </property>
+      <property name="text">
+       <string>Fit</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="Btn_Set">
+      <property name="enabled">
+       <bool>false</bool>
+      </property>
+      <property name="geometry">
+       <rect>
+        <x>130</x>
+        <y>10</y>
+        <width>60</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>微软雅黑 Light</family>
+        <pointsize>9</pointsize>
+       </font>
+      </property>
+      <property name="cursor">
+       <cursorShape>PointingHandCursor</cursorShape>
+      </property>
+      <property name="text">
+       <string>Set...</string>
+      </property>
+     </widget>
+    </widget>
+   </item>
+   <item row="0" column="0" rowspan="5" colspan="2">
+    <widget class="OGLWidget" name="openGLWidget">
+     <property name="minimumSize">
+      <size>
+       <width>700</width>
+       <height>550</height>
+      </size>
+     </property>
+     <property name="font">
+      <font>
+       <family>微软雅黑 Light</family>
+      </font>
+     </property>
+     <property name="cursor">
+      <cursorShape>CrossCursor</cursorShape>
+     </property>
+    </widget>
+   </item>
+   <item row="1" column="3">
+    <widget class="QWidget" name="widget2_SelectUser" native="true">
+     <property name="minimumSize">
+      <size>
+       <width>250</width>
+       <height>150</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>250</width>
+       <height>150</height>
+      </size>
+     </property>
+     <property name="font">
+      <font>
+       <family>微软雅黑 Light</family>
+      </font>
+     </property>
+     <widget class="QListWidget" name="list_user">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>250</width>
+        <height>140</height>
+       </rect>
+      </property>
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="font">
+       <font>
+        <family>微软雅黑 Light</family>
+       </font>
+      </property>
+      <property name="cursor" stdset="0">
+       <cursorShape>CrossCursor</cursorShape>
+      </property>
+      <property name="selectionMode">
+       <enum>QAbstractItemView::MultiSelection</enum>
+      </property>
+     </widget>
+    </widget>
+   </item>
+   <item row="2" column="3">
+    <widget class="QWidget" name="widget3_SelectPoint" native="true">
+     <property name="minimumSize">
+      <size>
+       <width>250</width>
+       <height>220</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>250</width>
+       <height>220</height>
+      </size>
+     </property>
+     <property name="font">
+      <font>
+       <family>微软雅黑 Light</family>
+      </font>
+     </property>
+     <widget class="QComboBox" name="cb_DetailUser">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>250</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>微软雅黑 Light</family>
+       </font>
+      </property>
+      <property name="cursor">
+       <cursorShape>UpArrowCursor</cursorShape>
+      </property>
+     </widget>
+     <widget class="QTabWidget" name="tabPoint">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>60</y>
+        <width>250</width>
+        <height>150</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>微软雅黑 Light</family>
+        <pointsize>9</pointsize>
+       </font>
+      </property>
+      <property name="cursor">
+       <cursorShape>CrossCursor</cursorShape>
+      </property>
+      <property name="currentIndex">
+       <number>0</number>
+      </property>
+      <widget class="QWidget" name="tab">
+       <attribute name="title">
+        <string>Stay Point</string>
+       </attribute>
+       <widget class="QListWidget" name="list_StayP">
+        <property name="geometry">
+         <rect>
+          <x>5</x>
+          <y>5</y>
+          <width>235</width>
+          <height>115</height>
+         </rect>
+        </property>
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="font">
+         <font>
+          <family>微软雅黑 Light</family>
+         </font>
+        </property>
+        <property name="cursor" stdset="0">
+         <cursorShape>CrossCursor</cursorShape>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="tab_2">
+       <attribute name="title">
+        <string>Location</string>
+       </attribute>
+       <widget class="QListWidget" name="list_LocP">
+        <property name="geometry">
+         <rect>
+          <x>5</x>
+          <y>5</y>
+          <width>235</width>
+          <height>115</height>
+         </rect>
+        </property>
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="cursor" stdset="0">
+         <cursorShape>CrossCursor</cursorShape>
+        </property>
+       </widget>
+      </widget>
+     </widget>
+     <widget class="QPushButton" name="Btn_Clear">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>30</y>
+        <width>60</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>微软雅黑 Light</family>
+        <pointsize>9</pointsize>
+       </font>
+      </property>
+      <property name="cursor">
+       <cursorShape>PointingHandCursor</cursorShape>
+      </property>
+      <property name="text">
+       <string>Clear</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="Btn_Zoom">
+      <property name="geometry">
+       <rect>
+        <x>95</x>
+        <y>30</y>
+        <width>60</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>微软雅黑 Light</family>
+        <pointsize>9</pointsize>
+       </font>
+      </property>
+      <property name="cursor">
+       <cursorShape>PointingHandCursor</cursorShape>
+      </property>
+      <property name="text">
+       <string>Zoom</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="Btn_Exp">
+      <property name="geometry">
+       <rect>
+        <x>170</x>
+        <y>30</y>
+        <width>60</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>微软雅黑 Light</family>
+        <pointsize>9</pointsize>
+       </font>
+      </property>
+      <property name="cursor">
+       <cursorShape>PointingHandCursor</cursorShape>
+      </property>
+      <property name="text">
+       <string>Export..</string>
+      </property>
+     </widget>
+    </widget>
+   </item>
+   <item row="0" column="2" rowspan="5">
+    <widget class="QWidget" name="widget5_split" native="true">
+     <property name="maximumSize">
+      <size>
+       <width>10</width>
+       <height>16777215</height>
+      </size>
+     </property>
+     <property name="font">
+      <font>
+       <family>微软雅黑 Light</family>
+      </font>
+     </property>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>OGLWidget</class>
+   <extends>QOpenGLWidget</extends>
+   <header>oglwidget.h</header>
+  </customwidget>
+ </customwidgets>
+ <resources>
+  <include location="resources.qrc"/>
+ </resources>
+ <connections/>
+</ui>

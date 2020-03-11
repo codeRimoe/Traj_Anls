@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Save</class>
+ <widget class="QDialog" name="Save">
+  <property name="windowModality">
+   <enum>Qt::ApplicationModal</enum>
+  </property>
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>300</width>
+    <height>205</height>
+   </rect>
+  </property>
+  <property name="font">
+   <font>
+    <family>微软雅黑 Light</family>
+    <pointsize>10</pointsize>
+   </font>
+  </property>
+  <property name="cursor">
+   <cursorShape>CrossCursor</cursorShape>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="resources.qrc">
+    <normaloff>:/img/Save.png</normaloff>:/img/Save.png</iconset>
+  </property>
+  <widget class="QCheckBox" name="cB1_txt">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>30</y>
+     <width>161</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <property name="cursor">
+    <cursorShape>UpArrowCursor</cursorShape>
+   </property>
+   <property name="text">
+    <string>TextFile(.txt)</string>
+   </property>
+  </widget>
+  <widget class="QCheckBox" name="cB2_shp">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>50</y>
+     <width>151</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <property name="cursor">
+    <cursorShape>UpArrowCursor</cursorShape>
+   </property>
+   <property name="text">
+    <string>ShapeFile(.shp)</string>
+   </property>
+  </widget>
+  <widget class="QCheckBox" name="cB4_gml">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>90</y>
+     <width>151</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <property name="cursor">
+    <cursorShape>UpArrowCursor</cursorShape>
+   </property>
+   <property name="text">
+    <string>GMLFile(.gml)</string>
+   </property>
+  </widget>
+  <widget class="QCheckBox" name="cB3_gj">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>70</y>
+     <width>161</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <property name="cursor">
+    <cursorShape>UpArrowCursor</cursorShape>
+   </property>
+   <property name="text">
+    <string>GeoJSONFile(.geojson)</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="SaveButton">
+   <property name="geometry">
+    <rect>
+     <x>210</x>
+     <y>30</y>
+     <width>60</width>
+     <height>35</height>
+    </rect>
+   </property>
+   <property name="cursor">
+    <cursorShape>PointingHandCursor</cursorShape>
+   </property>
+   <property name="text">
+    <string>Save</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="CanButton">
+   <property name="geometry">
+    <rect>
+     <x>210</x>
+     <y>80</y>
+     <width>60</width>
+     <height>35</height>
+    </rect>
+   </property>
+   <property name="cursor">
+    <cursorShape>PointingHandCursor</cursorShape>
+   </property>
+   <property name="text">
+    <string>Cancel</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>25</x>
+     <y>120</y>
+     <width>250</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <property name="cursor">
+    <cursorShape>CrossCursor</cursorShape>
+   </property>
+   <property name="text">
+    <string>You can reload the result from Text File.</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_2">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>150</y>
+     <width>70</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <property name="cursor">
+    <cursorShape>CrossCursor</cursorShape>
+   </property>
+   <property name="text">
+    <string>SaveName</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="saveName">
+   <property name="geometry">
+    <rect>
+     <x>105</x>
+     <y>153</y>
+     <width>165</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Result_save</string>
+   </property>
+  </widget>
+ </widget>
+ <resources>
+  <include location="resources.qrc"/>
+ </resources>
+ <connections/>
+</ui>

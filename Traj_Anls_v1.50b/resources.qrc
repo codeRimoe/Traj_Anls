@@ -1,0 +1,14 @@
+<RCC>
+    <qresource prefix="/">
+        <file>img/start.ico</file>
+        <file>img/process.png</file>
+        <file>img/Reload.png</file>
+        <file>img/Save.png</file>
+        <file>img/Set.png</file>
+        <file>img/Show.png</file>
+        <file>img/Analyse.png</file>
+        <file>img/Exit.png</file>
+        <file>img/Process.png</file>
+        <file>una.ico</file>
+    </qresource>
+</RCC>

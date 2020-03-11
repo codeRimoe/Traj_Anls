@@ -1,0 +1,10 @@
+/*
+!.gitignore
+!una.ico
+!*.cpp
+!*.h
+!*.pr
+!*.qrc
+!*.ui
+!*.pro
+!/img/
